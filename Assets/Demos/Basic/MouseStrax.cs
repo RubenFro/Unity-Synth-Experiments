@@ -23,6 +23,7 @@ public class MouseStrax : MonoBehaviour {
             if (!selected)
             {
                 current = (current + 1) % 5;
+                Debug.Log(note_on);
                 synths[current].KeyOn(note_on);
                 selected = true;
             }
